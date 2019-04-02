@@ -106,7 +106,7 @@ if __name__ == "__main__":
     favo            = 10
     mode            = ["exact_tag"]
     search_tags     = [["カリオストロ(グラブル)"], ["櫻井桃華"], ["ネロ・クラウディウス"], ["ギルガメッシュ"], ["沙都子"], ["木之本桜"]]
-    save_path       = "D:/kuon/DataSets/Picture"
+    save_path       = ""
     
     p = PixivDownloader()
     p.login("id", "pass")
