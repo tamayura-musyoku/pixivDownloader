@@ -67,7 +67,7 @@ class PixivDownloader :
             
             if work.page_count > 1:
                 # 複数セット省く
-                print("Out "+str(work.title)+":セット")
+                print("Out "+work.title+":セット")
                 continue
             
             if work.stats.score < worst_score:
@@ -76,22 +76,22 @@ class PixivDownloader :
             
             if work.stats.views_count < worst_views:
                 #　閲覧数による選別
-                print("Out "+str(work.title)+":閲覧数")
+                print("Out "+work.title+":閲覧数")
                 continue
             
             if work.stats.favorited_count.public < worst_favo:
                 #　いいねによる選別
-                print("Out "+str(work.title)+":いいね")
+                print("Out "+work.title+":いいね")
                 continue
             
             if r18_flag == (work.age_limit == "all-age"):
                 # 年齢制限の有無
-                print("Out "+str(work.title)+":年齢制限")
+                print("Out "+work.title+":年齢制限")
                 continue
             
             if os.path.exists(save_path+str(work.id)+"_p0.png") or os.path.exists(save_path+str(work.id)+"_p0.jpg"):
                 # 既に同名のファイルがある場合
-                print(str(work.title)+" has already downloaded")
+                print(work.title +" has already downloaded")
                 continue
             
             #　Download
