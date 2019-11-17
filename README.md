@@ -1,5 +1,8 @@
 # pixivDownloader
 タグなどを指定してPixivから画像をダウンロード出来ます。
+
+For gathering illustrations on pixiv
+
 # Requires
 python 3.7
 ~~~
