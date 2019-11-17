@@ -5,8 +5,6 @@ Created on Sat Mar 16 19:38:14 2019
 AIに食わせる画像を探すためにpixivpyをやります。
 タグで探せるようにつくります。
 とりあえずクラス化しました。
-
-@author: tamayura-musyoku
 """
 
 from pixivpy3 import AppPixivAPI
